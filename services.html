@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Services | Astra Homes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Streamlined luxury colors */
+    body {
+      background-color: #FFF9F7; /* soft cream */
+      color: #4A2C2A;
+      font-family: 'Helvetica', sans-serif;
+    }
+
+    /* Page intro */
+    .services-hero {
+      background-color: #FFF9F7;
+      padding: 5rem 0;
+      text-align: center;
+    }
+    .services-hero h1 {
+      color: #B86B78;
+      font-size: 3rem;
+    }
+    .services-hero p {
+      color: #4A2C2A;
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+    }
+
+    /* Service rows */
+    .service-row {
+      margin-bottom: 5rem;
+    }
+    .service-row h3 {
+      color: #B86B78;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .service-row p {
+      color: #4A2C2A;
+      font-size: 1.1rem;
+    }
+    .service-row img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+
+    /* Closing section */
+    .closing-section {
+      padding: 5rem 0;
+      text-align: center;
+      background-color: #FFF9F7;
+    }
+    .closing-box {
+      background-color: #FADADD;
+      border-radius: 25px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+    .closing-box h2 {
+      color: #B86B78;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+    .closing-box p {
+      color: #4A2C2A;
+      font-size: 1.1rem;
+    }
+
+    /* Book Now button */
+    .btn-book-now {
+      background-color: #B86B78;
+      color: #FFF;
+      font-weight: bold;
+      border-radius: 50px;
+      padding: 0.8rem 2rem;
+      margin-top: 2rem;
+      transition: all 0.3s ease;
+    }
+    .btn-book-now:hover {
+      background-color: #4A2C2A;
+      color: #FFF;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #F8F1EF;
+      color: #4A2C2A;
+      padding: 3rem 0;
+    }
+    footer a {
+      color: #B86B78;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .footer-divider {
+      border-color: #D4B2B0;
+      margin: 2rem 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Astra Homes</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link active fw-bold" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+        <li class="nav-item"><a class="nav-link" href="photos.html">Photos</a></li>
+        <li class="nav-item"><a class="nav-link" href="availability.html">Availability</a></li>
+        <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE INTRO -->
+<section class="services-hero">
+  <div class="container">
+    <h1>Our Services</h1>
+    <p>
+      Thoughtfully designed spaces for every occasion — from family gatherings and friends’ meetups, to celebrations and intimate retreats.  
+      Experience comfort, elegance, and luxury in every corner.
+    </p>
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="py-5">
+  <div class="container">
+
+    <!-- Friends Meetups -->
+    <div class="row align-items-center mb-5 service-row">
+      <div class="col-md-6">
+        <h3>Friends Meetups</h3>
+        <p>Perfect for reunions, celebrations, and private gatherings with friends. Enjoy a spacious, elegant environment that makes every meetup memorable.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/friends-meetups.jpg" alt="Friends Meetups">
+      </div>
+    </div>
+
+    <!-- Family Holiday Home -->
+    <div class="row align-items-center mb-5 service-row">
+      <div class="col-md-6 order-md-2">
+        <h3>Family Holiday Home</h3>
+        <p>Enjoy a peaceful and comfortable stay with your loved ones in a fully furnished space designed for relaxation and fun.</p>
+      </div>
+      <div class="col-md-6 order-md-1">
+        <img src="images/family-holiday.jpg" alt="Family Holiday Home">
+      </div>
+    </div>
+
+    <!-- Graduation Parties -->
+    <div class="row align-items-center mb-5 service-row">
+      <div class="col-md-6">
+        <h3>Graduation Parties</h3>
+        <p>Celebrate academic milestones in style and comfort. Our space is perfect for both intimate and large graduation celebrations.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/graduation-party.jpg" alt="Graduation Parties">
+      </div>
+    </div>
+
+    <!-- Baby Showers -->
+    <div class="row align-items-center mb-5 service-row">
+      <div class="col-md-6 order-md-2">
+        <h3>Baby Showers</h3>
+        <p>Host intimate and joyful baby showers in a clean and elegant space. Decor and setup can be customized to your theme.</p>
+      </div>
+      <div class="col-md-6 order-md-1">
+        <img src="images/baby-shower.jpg" alt="Baby Showers">
+      </div>
+    </div>
+
+    <!-- Meetings & Conferences -->
+    <div class="row align-items-center mb-5 service-row">
+      <div class="col-md-6">
+        <h3>Meetings & Conferences</h3>
+        <p>A calm environment suitable for meetings, workshops, and small conferences. Includes modern amenities for a professional experience.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/meetings.jpg" alt="Meetings & Conferences">
+      </div>
+    </div>
+
+    <!-- Airbnb Stays -->
+    <div class="row align-items-center mb-5 service-row">
+      <div class="col-md-6 order-md-2">
+        <h3>Airbnb Stays</h3>
+        <p>Short or long stays with hotel-level comfort and home-like privacy. Perfect for solo travelers, couples, or small groups.</p>
+      </div>
+      <div class="col-md-6 order-md-1">
+        <img src="images/airbnb.jpg" alt="Airbnb Stays">
+      </div>
+    </div>
+
+    <!-- Book Now Button -->
+    <div class="text-center mt-5">
+      <a href="availability.html" class="btn btn-book-now">Book Now</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CLOSING SECTION -->
+<section class="closing-section py-5 d-flex justify-content-center">
+  <div class="container">
+    <div class="closing-box mx-auto p-5 text-center" style="
+      background-color: #FFF9F7;  /* soft cream background instead of pink */
+      border-radius: 25px; 
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      max-width: 800px;
+    ">
+      <h2 class="fw-bold mb-3" style="color: #B86B78;">Because Every Moment Deserves the Right Space</h2>
+      <p class="lead" style="color: #4A2C2A; font-size: 1.1rem;">
+        At Astra Homes, every stay is crafted to make your moments special.  
+        Whether it’s a family gathering, a celebration with friends, or a quiet retreat, your time here is wrapped in comfort, elegance, and thoughtful care.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <h5>Astra Homes</h5>
+        <p>Your trusted partner for family stays, meetups, parties, and Airbnb rentals.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="availability.html">Availability</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5>Contact</h5>
+        <p>Email: <a href="mailto:astrahomeske@gmail.com">astrahomeske@gmail.com</a></p>
+        <p>Phone: <a href="tel:0707681403">0707681403</a></p>
+        <div class="mt-3">
+          <a href="https://www.instagram.com/astrahomeske?igsh=dDQ5aGF0Y3ZsbnB5" target="_blank" class="me-3">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@astra.homes_ke?_r=1&_t=ZS-93ugABc3afl" target="_blank">
+            <i class="bi bi-tiktok"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <p class="text-center mb-0">&copy; 2026 Astra Homes. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

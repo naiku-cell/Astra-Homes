@@ -1,0 +1,347 @@
+/* WRAPPER ONLY FOR IMAGE */
+.hero-image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+/* BROWN FRAME AROUND IMAGE ONLY */
+.image-frame {
+  background-color: #4b3832; /* luxurious brown */
+  padding: 1.5rem; /* creates the brown border space */
+  border-radius: 20px;
+  width: 90%;
+  max-width: 1200px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* HERO IMAGE */
+.hero-image {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  display: block;
+  border-radius: 15px;
+}
+
+/* HERO TEXT SECTION (SEPARATE) */
+.hero-text {
+  background: linear-gradient(135deg, #fff0f5, #ffffff);
+  color: #4b3832;
+  padding: 3rem 1rem;
+}
+
+/* TITLE */
+.hero-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #b56576;
+  margin-bottom: 1rem;
+}
+
+/* SUBTITLE */
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* BUTTON */
+.btn-hero {
+  background-color: #b56576;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 12px;
+  border: none;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-hero:hover {
+  background-color: #4b3832;
+  color: #ffe6f0;
+}
+
+
+
+
+/* Remove underlines from email and phone links */
+.contact-link {
+  text-decoration: none;
+}
+
+
+/* Services stacked showcase */
+.service-row {
+  background-color: #fff0f5; /* soft pink background */
+  padding: 3rem 1rem;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  margin-bottom: 3rem;
+  transition: transform 0.3s;
+}
+
+.service-row:hover {
+  transform: translateY(-5px);
+}
+
+.service-row h3 {
+  color: #b56576; /* pinkish-brown title */
+  margin-bottom: 1rem;
+}
+
+.service-row p {
+  color: #4b3832; /* brown text */
+  font-size: 1.1rem;
+}
+
+.service-row img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+/* why choose astra-homes */
+.why-choose-section {
+  background: linear-gradient(120deg, #ffe6f0, #f5e6dc); /* soft luxurious gradient */
+}
+
+.section-title {
+  color: #4b3832; /* rich brown */
+  font-size: 2.5rem;
+}
+
+.section-subtitle {
+  color: #7a5c57;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.why-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-15px) scale(1.03);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+}
+
+.icon-wrapper {
+  font-size: 4rem;
+  color: #b56576; /* pink accent */
+}
+
+.why-card h5 {
+  color: #4b3832; /* brown */
+  margin-bottom: 0.5rem;
+}
+
+.why-card p {
+  color: #6b4f4b; /* muted brown */
+  line-height: 1.6;
+}
+
+/* ABOUT SECTION */
+.about-section {
+  background: linear-gradient(120deg, #fff0f5, #ffffff); /* soft pink to white gradient */
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about-title {
+  color: #4b3832; /* rich brown */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-subtitle {
+  color: #b56576; /* pink accent */
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.about-text {
+  color: #6b4f4b; /* muted brown */
+  line-height: 1.7;
+}
+
+.about-image {
+  border: 5px solid #ffe6f0; /* soft pink border */
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+}
+
+.btn-about {
+  background-color: #b56576; /* pink */
+  color: #ffffff;
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-about:hover {
+  background-color: #4b3832; /* brown on hover */
+  color: #ffe6f0;
+  transform: translateY(-3px);
+}
+/* ABOUT PAGE */
+.about-hero {
+  background-color: #f7e6ea;
+  padding: 80px 0;
+}
+
+.about-hero h1 {
+  color: #4b3832;
+}
+
+.about-hero p {
+  color: #6b4f4f;
+}
+
+/* IMAGE FRAME */
+.image-frame {
+  border: 4px solid #4b3832;
+  padding: 8px;
+  display: inline-block;
+}
+
+/* VALUES SECTION */
+.values-section {
+  background-color: #fffafc;
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  color: #f2b5c4;
+}
+
+/* Closing Section */
+.closing-section {
+  background: linear-gradient(135deg, #FDE1E6, #F8D0D9); /* soft pink shades */
+  color: #4A2C2A; /* luxurious dark brown text */
+}
+
+.closing-section .closing-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1); /* subtle overlay to blend with background */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* soft shadow for depth */
+}
+
+.closing-section h2 {
+  font-size: 2rem;
+  color: #B86B78; /* pinkish brown accent */
+}
+
+.closing-section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+/* Book Now Button */
+.book-now-btn {
+  background-color: #B86B78; /* main pink-brown */
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.book-now-btn:hover,
+.book-now-btn:focus {
+  background-color: #4A2C2A; /* dark brown on hover */
+  color: #FDE1E6; /* soft pink text on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+
+/* SERVICES PAGE */
+.services-hero {
+  background-color: #f7e6ea;
+  padding: 80px 0;
+}
+
+.services-hero h1 {
+  color: #4b3832;
+}
+
+.services-hero p {
+  color: #6b4f4f;
+}
+
+.service-section {
+  padding: 80px 0;
+}
+
+.alt-bg {
+  background-color: #fffafc;
+}
+
+/* Image frame reused */
+.image-frame {
+  border: 4px solid #4b3832;
+  padding: 8px;
+}
+.btn-pink {
+  background-color: #B86B78; /* luxurious pink */
+  color: #fff;
+  border-radius: 25px;
+  padding: 0.75rem 2rem;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.btn-pink:hover {
+  background-color: #4A2C2A; /* dark brown on hover */
+  color: #FDE1E6;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  background-color: #FFF9F7; /* very soft, almost white with a touch of warm pink */
+  color: #4A2C2A; /* main dark brown text */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer a.footer-link {
+  color: #B86B78; /* subtle pink-brown for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a.footer-link:hover {
+  color: #4A2C2A; /* dark brown on hover */
+}
+
+.footer-divider {
+  border-top: 1px solid #D8C2BD; /* soft brownish line */
+  margin: 2rem 0;
+}
+
+.footer .social-icon i {
+  font-size: 1.4rem;
+  color: #B86B78; /* pink-brown icons */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer .social-icon i:hover {
+  color: #4A2C2A; /* dark brown on hover */
+  transform: translateY(-2px);
+}
+
