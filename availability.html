@@ -2,96 +2,218 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Availability | Astra Homes</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Availability | Your Brand</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Bootstrap CSS -->
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- FullCalendar CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
-    body { padding-top: 80px; }
-    #calendar { max-width: 900px; margin: 0 auto; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to bottom, #fff9fb, #ffffff);
+      color: #444;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* HERO */
+    .availability-hero {
+      padding: 120px 20px 80px;
+      text-align: center;
+    }
+
+    .availability-hero h1 {
+      font-size: 80px;
+      letter-spacing: 5px;
+      color: #c98aa2;
+      font-weight: 700;
+    }
+
+    .availability-hero p {
+      max-width: 650px;
+      margin: 25px auto 0;
+      font-size: 18px;
+      color: #666;
+    }
+
+    /* AVAILABILITY INFO */
+    .availability-info {
+      padding: 80px 20px;
+    }
+
+    .availability-box {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 60px 50px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    }
+
+    .availability-box h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    .availability-box p {
+      font-size: 17px;
+      line-height: 1.8;
+      color: #666;
+    }
+
+    .availability-list {
+      margin-top: 30px;
+    }
+
+    .availability-list li {
+      margin-bottom: 15px;
+      font-size: 16px;
+      list-style: none;
+      position: relative;
+      padding-left: 25px;
+    }
+
+    .availability-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #c98aa2;
+      font-weight: bold;
+    }
+
+    /* CTA */
+    .cta-section {
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .btn-book {
+      background: #c98aa2;
+      color: #fff;
+      border: none;
+      padding: 16px 45px;
+      font-size: 16px;
+      border-radius: 50px;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-book:hover {
+      background: #b8748f;
+      transform: translateY(-2px);
+    }
+
+    /* QUICK LINKS */
+    .quick-links {
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .quick-links a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #555;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    .quick-links a:hover {
+      color: #c98aa2;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #fff7fa;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+    }
   </style>
 </head>
 <body>
-
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
   <div class="container">
     <a class="navbar-brand fw-bold" href="index.html">Astra Homes</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
         <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
         <li class="nav-item"><a class="nav-link" href="photos.html">Photos</a></li>
-        <li class="nav-item"><a class="nav-link active" href="availability.html">Availability</a></li>
+        <li class="nav-item"><a class="nav-link active fw-bold" href="availability.html">Availability</a></li>
         <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- HERO -->
-<section class="bg-light py-5 text-center">
-  <h1 class="fw-bold">Availability & Booking</h1>
-  <p class="text-muted mt-2">Check our booking schedule and plan your stay with ease.</p>
-</section>
+  <!-- HERO -->
+  <section class="availability-hero">
+    <h1>AVAILABILITY</h1>
+    <p>
+      Our calendar fills quickly. Please review our availability guidelines
+      and secure your date early to avoid disappointment.
+    </p>
+  </section>
 
-<!-- BOOKING RULES -->
-<section class="container py-4">
-  <h4 class="fw-bold text-center mb-3">Booking Rules</h4>
-  <ul class="list-group list-group-flush mb-5 text-center">
-    <li class="list-group-item">Minimum stay: 24 hours</li>
-    <li class="list-group-item">Cancellation policy: No refund unless host cancels</li>
-    <li class="list-group-item">Booking confirmed only after payment</li>
-  </ul>
+  <!-- INFO -->
+  <section class="availability-info container">
+    <div class="availability-box mx-auto">
 
-  <!-- CALENDAR -->
-  <div id="calendar"></div>
-</section>
+      <h2>When We’re Available</h2>
+      <p>
+        We accept a limited number of bookings each month to ensure every
+        event receives our full creative attention and care.
+      </p>
 
-<!-- BOOK NOW -->
-<section class="bg-light py-5 text-center">
-  <h4 class="fw-bold">Ready to Book?</h4>
-  <p class="mt-2">Click below to secure your stay at Astra Homes.</p>
-  <a href="mailto:astrahomeske@gmail.com" class="btn btn-primary mt-2">Book Now</a>
-</section>
+      <ul class="availability-list">
+        <li>Bookings are accepted on a first-come, first-served basis</li>
+        <li>Peak seasons fill up faster — early inquiries are recommended</li>
+        <li>Same-day bookings are subject to availability</li>
+        <li>Advance deposits secure your selected date</li>
+      </ul>
 
-<!-- FOOTER -->
-<footer class="bg-dark text-white py-4 text-center">
-  &copy; 2026 Astra Homes. Comfort • Privacy • Quality Service
-</footer>
+      <div class="cta-section">
+        <p class="mb-4">
+          Ready to reserve your date?
+        </p>
+        <a href="https://wa.me/254707681403?text=Hi%20Astra%20Homes!%20I%20want%20to%20book%20a%20stay." 
+   target="_blank" 
+   class="btn btn-warning btn-lg fw-bold">
+   Book Now
+</a>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      </div>
 
-<!-- FullCalendar JS -->
-<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
+    </div>
+  </section>
 
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      initialView: 'dayGridMonth',
-      height: 'auto',
-      events: [
-        { title: 'Booked', start: '2026-03-01', end: '2026-03-05', color: '#dc3545' },
-        { title: 'Available', start: '2026-02-01', end: '2026-02-28', color: '#198754' },
-        { title: 'Available', start: '2026-04-01', end: '2026-04-30', color: '#198754' }
-      ]
-    });
+  <!-- QUICK LINKS -->
+  <section class="quick-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="photos.html">Photos</a>
+    <a href="availability.html" style="color:#c98aa2;">Availability</a>
 
-    calendar.render();
-  });
-</script>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Astra-Homes. All Rights Reserved.
+  </footer>
 
 </body>
 </html>

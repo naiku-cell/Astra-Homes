@@ -2,34 +2,132 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Photos | Astra Homes</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photos | Your Brand</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Bootstrap CSS -->
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
-</head>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to bottom, #fff9fb, #ffffff);
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* HERO */
+    .photos-hero {
+      padding: 120px 20px 80px;
+      text-align: center;
+    }
+
+    .photos-hero h1 {
+      font-size: 90px;
+      letter-spacing: 6px;
+      font-weight: 700;
+      color: #c98aa2;
+    }
+
+    .photos-hero p {
+      max-width: 600px;
+      margin: 20px auto 0;
+      color: #666;
+      font-size: 18px;
+    }
+
+    /* GALLERY */
+    .gallery-section {
+      padding: 60px 40px 100px;
+    }
+
+    .gallery-img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 20px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .gallery-img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 20px 40px rgba(201, 138, 162, 0.25);
+    }
+
+    .gallery-caption {
+      margin-top: 15px;
+      font-size: 15px;
+      letter-spacing: 1px;
+      color: #555;
+      text-transform: uppercase;
+    }
+
+    /* QUOTE SECTION */
+    .quote-section {
+      background: #fff3f7;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .quote-section h2 {
+      font-size: 34px;
+      max-width: 700px;
+      margin: auto;
+      color: #444;
+    }
+
+    /* QUICK LINKS */
+    .quick-links {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .quick-links a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #444;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    .quick-links a:hover {
+      color: #c98aa2;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #fff7fa;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
 <body>
 
-<!-- ===== NAVBAR ===== -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
   <div class="container">
     <a class="navbar-brand fw-bold" href="index.html">Astra Homes</a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
         <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
-        <li class="nav-item"><a class="nav-link active" href="photos.html">Photos</a></li>
+        <li class="nav-item"><a class="nav-link active fw-bold" href="photos.html">Photos</a></li>
         <li class="nav-item"><a class="nav-link" href="availability.html">Availability</a></li>
         <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
       </ul>
@@ -37,87 +135,74 @@
   </div>
 </nav>
 
-<!-- Spacer -->
-<div style="height: 80px;"></div>
 
-<!-- ===== PHOTOS HERO ===== -->
-<section class="bg-light py-5">
-  <div class="container text-center">
-    <h1 class="fw-bold">Gallery</h1>
-    <p class="text-muted mt-3">Take a peek at Astra Homes and the spaces we offer.</p>
-  </div>
-</section>
+  <!-- HERO -->
+  <section class="photos-hero">
+    <h1>PHOTOS</h1>
+    <p>
+      A curated collection of celebrations, styled spaces, and unforgettable
+      moments crafted with elegance and intention.
+    </p>
+  </section>
 
-<!-- ===== PHOTO GALLERY ===== -->
-<section class="py-5">
-  <div class="container">
-    <div class="row g-4">
+  <!-- GALLERY -->
+  <section class="gallery-section container">
+    <div class="row g-5">
 
-      <!-- Card 1 -->
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="images/photo1.jpg" class="card-img-top" alt="Living Room">
-        </div>
+      <div class="col-md-6">
+        <img src="images/baby-shower.jpg" class="gallery-img" alt="Baby Shower">
+        <div class="gallery-caption">Baby Shower Styling</div>
       </div>
 
-      <!-- Card 2 -->
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="images/photo2.jpg" class="card-img-top" alt="Bedroom">
-        </div>
+      <div class="col-md-6">
+        <img src="images/graduation-party.jpg" class="gallery-img" alt="Graduation Party">
+        <div class="gallery-caption">Graduation Celebration</div>
       </div>
 
-      <!-- Card 3 -->
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="images/photo3.jpg" class="card-img-top" alt="Dining Area">
-        </div>
+      <div class="col-md-6">
+        <img src="images/meetings.jpg" class="gallery-img" alt="Corporate Meetings">
+        <div class="gallery-caption">Corporate Meetings</div>
       </div>
 
-      <!-- Card 4 -->
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="images/photo4.jpg" class="card-img-top" alt="Garden">
-        </div>
+      <div class="col-md-6">
+        <img src="images/friends-meetups.jpg" class="gallery-img" alt="Friends Meetups">
+        <div class="gallery-caption">Private Gatherings</div>
       </div>
 
-      <!-- Card 5 -->
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="images/photo5.jpg" class="card-img-top" alt="Event Setup">
-        </div>
+      <div class="col-md-6">
+        <img src="images/airbnb.jpg" class="gallery-img" alt="Airbnb Setup">
+        <div class="gallery-caption">Luxury Airbnb Setup</div>
       </div>
 
-      <!-- Card 6 -->
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="images/photo6.jpg" class="card-img-top" alt="Conference Room">
-        </div>
+      <div class="col-md-6">
+        <img src="images/about.jpg" class="gallery-img" alt="About Styling">
+        <div class="gallery-caption">Behind The Scenes</div>
       </div>
 
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===== BOOKING PROMPT ===== -->
-<section class="bg-light py-5">
-  <div class="container text-center">
-    <h4 class="fw-bold">Interested in staying with us?</h4>
-    <p class="mt-3">Check availability and book your stay today.</p>
-    <a href="availability.html" class="btn btn-primary px-4 mt-3">Check Availability</a>
-  </div>
-</section>
+  <!-- QUOTE -->
+  <section class="quote-section">
+    <h2>
+      “Because every moment deserves to be remembered beautifully.”
+    </h2>
+  </section>
 
-<!-- ===== FOOTER ===== -->
-<footer class="bg-dark text-white py-4">
-  <div class="container text-center">
-    <p class="mb-1">&copy; 2026 Astra Homes. All Rights Reserved.</p>
-    <small>Comfort • Privacy • Quality Service</small>
-  </div>
-</footer>
+  <!-- QUICK LINKS -->
+  <section class="quick-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="photos.html" style="color:#c98aa2;">Photos</a>
+    
+  </section>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Your Brand Name. All Rights Reserved.
+  </footer>
 
 </body>
 </html>
+
